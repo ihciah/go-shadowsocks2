@@ -36,6 +36,7 @@ var aeadList = map[string]struct {
 	"AEAD_AES_192_GCM":       {24, shadowaead.AESGCM},
 	"AEAD_AES_256_GCM":       {32, shadowaead.AESGCM},
 	"AEAD_CHACHA20_POLY1305": {32, shadowaead.Chacha20Poly1305},
+	// AEAD_XCHACHA20_POLY1305 is not supported because it's removed in upstream
 }
 
 // List of stream ciphers: key size in bytes and constructor
@@ -50,6 +51,8 @@ var streamList = map[string]struct {
 	"AES-128-CFB":   {16, shadowstream.AESCFB},
 	"AES-192-CFB":   {24, shadowstream.AESCFB},
 	"AES-256-CFB":   {32, shadowstream.AESCFB},
+	"BF-CFB":        {16, shadowstream.BFCFB},
+	"SALSA20":       {32, shadowstream.SALSA20},
 	"CHACHA20":      {32, shadowstream.ChaCha20},
 	"CHACHA20-IETF": {32, shadowstream.Chacha20IETF},
 	"XCHACHA20":     {32, shadowstream.Xchacha20},
