@@ -7,7 +7,7 @@ import (
 
 	"sync"
 
-	"github.com/shadowsocks/go-shadowsocks2/socks"
+	"github.com/ihciah/go-shadowsocks2/socks"
 )
 
 const udpBufSize = 64 * 1024

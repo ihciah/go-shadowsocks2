@@ -1,5 +1,6 @@
 # go-shadowsocks2
 
+(Forked from https://github.com/ayanamist/go-shadowsocks2 for RC4-MD5 support)
 A fresh implementation of Shadowsocks in Go.
 
 GoDoc at https://godoc.org/github.com/shadowsocks/go-shadowsocks2/
@@ -16,7 +17,7 @@ GoDoc at https://godoc.org/github.com/shadowsocks/go-shadowsocks2/
 ## Install
 
 ```sh
-go get -u -v github.com/shadowsocks/go-shadowsocks2
+go get -u -v github.com/ihciah/go-shadowsocks2
 ```
 
 
